@@ -1,0 +1,14 @@
+@font-face {
+    font-family:Ndot;
+    src: url(ndot-47-inspired-by-nothing.ttf/ndot-47-inspired-by-nothing.ttf);
+}
+body {
+  background-color: powderblue;
+  font-family: Ndot;
+}
+h1 {
+  color: blue;
+}
+p {
+  color: red;
+}
