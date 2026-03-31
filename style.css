@@ -1,14 +1,51 @@
-@font-face {
-    font-family:Ndot;
-    src: url(ndot-47-inspired-by-nothing.ttf/ndot-47-inspired-by-nothing.ttf);
-}
+
 body {
-  background-color: powderblue;
-  font-family: Ndot;
+  background-color: rgb(19, 19, 19);
 }
 h1 {
-  color: blue;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 60px;
 }
 p {
-  color: red;
+  color: rgb(175, 175, 175);
+  font-family:'Courier New', Courier, monospace;
+  
+}
+.btn {
+  background-color: rgb(160, 160, 160);
+  color: black;
+  font-size: 17px;
+  padding: 15px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin: auto;
+  
+}
+.btn:hover {
+  background-color: rgb(56, 56, 56);
+  color: rgb(199, 199, 199);
+}
+
+.nav{
+  overflow: hidden;
+  background-color: rgb(94, 94, 94);
+}
+.nav input[type=text] {
+  float: left;
+  padding: 6px;
+  border: none;
+  margin-top: 6px;
+  margin-left: 6px;
+  font-size: 18px;
+}
+.main-bar {
+  background-color: rgb(34, 34, 34);
+}
+footer{
+  text-align: center;
+  background-color: rgb(59, 59, 59);
+  padding: 50px;
 }
