@@ -21,9 +21,33 @@ let username;
 username = window.prompt("what is your username");
 console.log(username);
 */
-let username;
-
+const pi = 3.14;
+let radius;
+let circumfrence;
 document.getElementById("submit").onclick = function () {
-  username = document.getElementById("txtbox").value;
-  document.getElementById("myh1").textcontent = `hello ${username}`;
+  radius = document.getElementById("txtbox").value;
+  radius = Number(radius);
+  circumfrence = 2 * pi * radius;
+  document.getElementById("myh2").textContent = circumfrence + "cm";
+};
+
+const dec = document.getElementById("dec");
+const inc = document.getElementById("inc");
+const reset = document.getElementById("reset");
+const cnt = document.getElementById("cnt-no");
+let count = 0;
+
+dec.onclick = function () {
+  count--;
+  cnt.textContent = count;
+};
+
+inc.onclick = function () {
+  count++;
+  cnt.textContent = count;
+};
+
+reset.onclick = function () {
+  count = 0;
+  cnt.textContent = count;
 };

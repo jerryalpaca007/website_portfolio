@@ -50,3 +50,9 @@ footer {
 label {
   background-color: aliceblue;
 }
+
+#cnt-no {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+}
