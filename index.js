@@ -21,7 +21,7 @@ let username;
 username = window.prompt("what is your username");
 console.log(username);
 */
-const pi = 3.14;
+/*const pi = 3.14;
 let radius;
 let circumfrence;
 document.getElementById("submit").onclick = function () {
@@ -51,3 +51,30 @@ reset.onclick = function () {
   count = 0;
   cnt.textContent = count;
 };
+*/
+
+/*let time = 18;
+if (time <= 8) {
+  console.log("good morning");
+} else if (time >= 18) {
+  console.log("good evening");
+} else {
+  console.log("good afternoon");
+}*/
+
+/*const txt = document.getElementById("mytext");
+const su = document.getElementById("mysubmit");
+const resele = document.getElementById("result");
+
+let age;
+su.onclick = function () {
+  age = txt.value;
+  age = Number(age);
+  if (age < 18) {
+    console.log("not old enough");
+  } else if (age >= 18) {
+    console.log("old enough");
+  } else {
+    console.log("idek");
+  }
+};*/
