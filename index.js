@@ -78,3 +78,26 @@ su.onclick = function () {
     console.log("idek");
   }
 };*/
+
+/*const check = document.getElementById("checkbox1");
+const check1 = document.getElementById("checkbox2");
+const check2 = document.getElementById("checkbox2");
+const submit = document.getElementById("newsubmit");
+const pdetails = document.getElementById("para");
+
+submit.onclick = function () {
+  if (check.checked) {
+    pdetails.textContent = "noice";
+  } else {
+    pdetails.textContent = "nuh uh";
+  }
+
+  if (check1.checked) {
+    pdetails.textContent = "idk bro";
+  } else if (check2.checked) {
+    pdetails.textContent = "idek bro";
+  }
+};*/
+let age = 12;
+let message = age >= 18 ? "youre an adult" : "youre a minor";
+console.log(message);
