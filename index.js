@@ -98,6 +98,42 @@ submit.onclick = function () {
     pdetails.textContent = "idek bro";
   }
 };*/
-let age = 12;
+/*let age = 19;
 let message = age >= 18 ? "youre an adult" : "youre a minor";
 console.log(message);
+
+let y = 4;
+switch (y) {
+  case 1:
+    console.log("monday");
+    break;
+  case 2:
+    console.log("friday");
+    break;
+  case 3:
+    console.log("wednesday");
+    break;
+  case 4:
+    console.log("thursday");
+    break;
+  case 5:
+    console.log("friday");
+    break;
+  default:
+    console.log("does not exist");
+}*/
+
+let testscore = 100;
+let lettergrade;
+switch (true) {
+  case testscore >= 100:
+    lettergrade = "A";
+    break;
+  case testscore >= 90:
+    lettergrade = "B";
+    break;
+  case testscore >= 80:
+    lettergrade = "C";
+    break;
+}
+console.log(lettergrade);
