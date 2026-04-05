@@ -122,7 +122,7 @@ switch (y) {
   default:
     console.log("does not exist");
 }*/
-
+/*
 let testscore = 100;
 let lettergrade;
 switch (true) {
@@ -137,3 +137,118 @@ switch (true) {
     break;
 }
 console.log(lettergrade);
+*/
+/*let username = "jerry";
+let result = username.startsWith(" ");
+if (result) {
+  console.log("you cant start a username with a space");
+} else {
+  console.log("continue");
+}
+*/
+/*let phone = "123-456-789";
+let newphone = phone.padEnd(16, "0");
+console.log(newphone);
+*/
+/*
+const fullname = "jaden p";
+let fslice = fullname.slice(0, fullname.indexOf(" "));
+let lslice = fullname.slice(fullname.indexOf(" ") + 1);
+console.log(fslice);
+console.log(lslice);
+*/
+/*
+let username = window.prompt("enter your username");
+
+username = username.trim();
+let letter = username.charAt(0);
+letter = letter.toUpperCase();
+
+let extrachars = username.slice(1);
+extrachars = extrachars.toLowerCase();
+username = letter + extrachars;
+console.log(username);
+*/
+/*
+let username = window.prompt("enter your username");
+username =
+  username.trim().charAt(0).toUpperCase() +
+  username.trim().slice(1).toLowerCase();
+console.log(username);
+*/
+/*
+const temp = 25;
+if (temp > 30 || temp <= 0) {
+  console.log("bad weather");
+} else {
+  console.log("good weather");
+}
+const pi = 3.14;
+if (pi !== "3.14") {
+  console.log("that is not pi");
+} else {
+  console.log("That is  pi");
+}
+*/
+/*
+let username = "a";
+do {
+  username = window.prompt("enter your username");
+} while (username === "" || username === null);
+
+console.log("welcome");
+*/
+/*
+let loggedin = true;
+let username;
+let password;
+
+while (!loggedin);
+username = window.prompt("enter username");
+password = window.prompt("enter password");
+if (username === "user" && password === "user") {
+  loggedin = true;
+  console.log("logged in");
+} else {
+  console.log("invalid credentials, try again.");
+}
+*/
+/*
+for (let i = 1; i <= 20; i++) {
+  if (i == 13) {
+    break;
+  } else {
+    console.log(i);
+  }
+}
+*/
+
+//number guessing game
+
+const minimum = 1;
+const maximum = 100;
+const answer = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
+
+let attempts = 0;
+let guess;
+let running = true;
+
+while (running) {
+  guess = window.prompt(`guess the number from ${minimum} to ${maximum}`);
+  guess = Number(guess);
+  if (isNaN(guess)) {
+    window.alert("enter a valid number");
+  } else if (guess < minimum || guess > maximum) {
+    window.alert("enter a number within the given range");
+  } else {
+    attempts++;
+    if (guess < answer) {
+      window.alert("too low try again");
+    } else if (guess > answer) {
+      window.alert("too high try again");
+    } else {
+      window.alert(`Correct the answer is ${answer}`);
+      running = false;
+    }
+  }
+}
