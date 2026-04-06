@@ -224,7 +224,7 @@ for (let i = 1; i <= 20; i++) {
 */
 
 //number guessing game
-
+/*
 const minimum = 1;
 const maximum = 100;
 const answer = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
@@ -252,3 +252,8 @@ while (running) {
     }
   }
 }
+*/
+function cool() {
+  console.log("cool");
+}
+cool();
