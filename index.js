@@ -253,7 +253,31 @@ while (running) {
   }
 }
 */
+/*
 function cool() {
   console.log("cool");
 }
 cool();
+*/
+
+function add(x, y) {
+  return x + y;
+}
+function subtract(x, y) {
+  return x - y;
+}
+function multiply(x, y) {
+  return x * y;
+}
+function divide(x, y) {
+  return x / y;
+}
+function iseven(number) {
+  return number % 2 == 0 ? true : false;
+}
+console.log(iseven(20));
+
+function validemail(email) {
+  return email.includes("@") ? true : false;
+}
+console.log(validemail("oofgmail.com"));

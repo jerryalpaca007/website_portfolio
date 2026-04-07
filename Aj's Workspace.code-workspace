@@ -1,11 +1,11 @@
 {
   "folders": [
     {
-      "path": ".",
+      "path": "."
     },
     {
-      "path": "../ai_bot",
-    },
+      "path": "../ai_bot"
+    }
   ],
   "settings": {
     "liveServer.settings.multiRootWorkspaceName": "github_website",
