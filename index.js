@@ -259,7 +259,7 @@ function cool() {
 }
 cool();
 */
-
+/*
 function add(x, y) {
   return x + y;
 }
@@ -281,3 +281,32 @@ function validemail(email) {
   return email.includes("@") ? true : false;
 }
 console.log(validemail("oofgmail.com"));
+*/
+/*
+const textbox = document.getElementById("textbox2");
+const toFahrenheit = document.getElementById("toFahrenheit");
+const tocelsius = document.getElementById("tocelsius");
+const result = document.getElementById("result1");
+let temp;
+
+function convert() {
+  if (toFahrenheit.checked) {
+    temp = Number(textbox.value);
+    temp = (temp * 9) / 5 + 32;
+    result.textContent = temp.toFixed(1) + "F";
+  } else if (tocelsius.checked) {
+    temp = Number(textbox.value);
+    temp = (temp - 32) * (5 / 9);
+    result.textContent = temp.toFixed(1) + "C";
+  } else {
+    result.textCaontent("select a unit");
+  }
+}
+*/
+
+let fruits = ["apple", "mango", "pineapple"];
+
+fruits.sort().reverse();
+for (let fruit of fruits) {
+  console.log(fruit);
+}
