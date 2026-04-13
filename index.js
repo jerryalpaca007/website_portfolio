@@ -324,7 +324,7 @@ console.log(total);
 */
 
 //Random password generator
-
+/*
 function generatepwd(
   length,
   incuppercase,
@@ -344,14 +344,24 @@ function generatepwd(
   allowedchars += incuppercase ? uppercase : "";
   allowedchars += incnumbers ? numbers : "";
 
-  return " ";
+  if (length <= 0) {
+    return `pwd length must be at least 1`;
+  } else if (allowedchars.length === 0) {
+    return `at least 1 set of character needs to be selected`;
+  }
+  for (let i = 0; i < length; i++) {
+    const randomindex = Math.floor(Math.random() * allowedchars.length);
+    password += allowedchars[randomindex];
+  }
+
+  return password;
 }
 
 const length = 12;
 const incuppercase = true;
-const inclowercase = false;
+const inclowercase = true;
 const incnumbers = true;
-const incsymbols = false;
+const incsymbols = true;
 
 const password = generatepwd(
   length,
@@ -360,3 +370,6 @@ const password = generatepwd(
   incnumbers,
   incsymbols,
 );
+
+console.log(password);
+*/
