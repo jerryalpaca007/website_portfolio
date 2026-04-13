@@ -303,10 +303,60 @@ function convert() {
   }
 }
 */
-
+/*
 let fruits = ["apple", "mango", "pineapple"];
 
 fruits.sort().reverse();
 for (let fruit of fruits) {
   console.log(fruit);
 }
+
+function sum(...numbers) {
+  let result = 0;
+  for (let number of numbers) {
+    result += number;
+  }
+  return result;
+}
+
+const total = sum(1);
+console.log(total);
+*/
+
+//Random password generator
+
+function generatepwd(
+  length,
+  incuppercase,
+  inclowercase,
+  incnumbers,
+  incsymbols,
+) {
+  const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  const lowercase = "abcdefghijklmnopqrstuvwxyz";
+  const numbers = "1234567890";
+  const symbols = "@#$%&?.></_+=:;";
+
+  let allowedchars = "";
+  let password = "";
+
+  allowedchars += inclowercase ? lowercase : "";
+  allowedchars += incuppercase ? uppercase : "";
+  allowedchars += incnumbers ? numbers : "";
+
+  return " ";
+}
+
+const length = 12;
+const incuppercase = true;
+const inclowercase = false;
+const incnumbers = true;
+const incsymbols = false;
+
+const password = generatepwd(
+  length,
+  incuppercase,
+  inclowercase,
+  incnumbers,
+  incsymbols,
+);
