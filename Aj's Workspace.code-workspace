@@ -11,6 +11,6 @@
     },
   ],
   "settings": {
-    "liveServer.settings.multiRootWorkspaceName": "github_website",
+    "liveServer.settings.multiRootWorkspaceName": "github_weather_web",
   },
 }
